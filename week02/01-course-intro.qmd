@@ -4,7 +4,12 @@ subtitle: "LSE MY459: Quantitative Text Analysis"
 date-modified: "27 January 2025" 
 toc: true
 format: html
+
 ---
+
+```{r}
+wdir <- '/Users/student/Desktop/LSE /Year 2/Quantitative Text Analysis/Week 2/'
+```
 
 Before we dive into our first coding session, let's become a bit more familiar with the programming tools used in this course.
 
@@ -74,9 +79,19 @@ install.packages("streamR")
 install.packages("quanteda")
 install.packages("quanteda.textplots")
 install.packages("quanteda.textstats")
+
+install.packages("remotes")
+remotes::install_github("quanteda/quanteda.textmodels")
+
 install.packages("quanteda.textmodels")
 install.packages("devtools")
 devtools::install_github("quanteda/quanteda.corpora")
+
+brew install gcc
+
+remotes::install_github("quanteda/quanteda.textmodels")
+
+xcode-select --install
 ```
 
 Notice we've added an option to the chunk above: `eval=FALSE`. This instructs R _not_ to execute this code chunk when this file is rendered, although the text of chunk will still appear in the rendered document. If you would like for the text of the code chunk not to appear, you would use `echo=FALSE`. Quarto and RMarkdown use different syntax for specifying code chunk options, but Quarto will recognise and understand the RMarkdown syntax. RMarkdown specifies options as in the previous code chunk. Quarto uses a syntax as in the following code chunk:
